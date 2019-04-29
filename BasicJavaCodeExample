@@ -1,0 +1,64 @@
+package n1;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //int n;
+        StringBuffer sb = new StringBuffer("kll");
+        sb.append("ah");
+        System.out.println(sb);
+        Scanner sf = new Scanner(System.in);
+//InputStream.skip();
+        String s1 = sf.nextLine();
+        String f1 = "amarSonarBangla";
+
+        String Upprcs = s1.toUpperCase();
+        String s2 = new String("");
+        System.out.println(s1);
+        System.out.println(Upprcs);
+        int DD = Upprcs.codePointAt(0);//ascii
+        System.out.println(DD);
+        if (s1.isEmpty()) {
+            System.out.println("true");
+        }
+        System.out.println(s1.indexOf('b'));//index number
+        System.out.println(s1.lastIndexOf('b'));//Index of last n
+
+
+        for (int i = 0; i < s1.length(); i++) {
+            System.out.println(s1.charAt(i));
+            s2 += s1.charAt(i);
+        }
+        System.out.print(s2);
+        int[] ar = new int[5];
+        for (int i = 0; i < 5; i++) {
+            ar[i] = i;
+        }
+        for (int x : ar) {
+            System.out.println(ar[x]);
+        }
+        String[] sarray = new String[5];
+        for (int i = 0; i < 5; i++) {
+            sarray[i] = sf.nextLine();
+        }
+        if (s1.contains("aaa")) {
+            System.out.println("YES");
+        }
+        if (s1.startsWith("a")) {
+            System.out.println("thikache-1");
+        }
+        if (s1.endsWith("a")) {
+            System.out.println("thikache-2");
+        }
+        String s3 = s1.trim();//first and last space remove.
+
+        for (String y : sarray) {
+            System.out.println(y);
+        }
+
+//ctrl+alt+l for formatting>
+    }
+}
